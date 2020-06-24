@@ -4,13 +4,22 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    siteTitleAlt: `Perduchock & Debeluga`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: "Perduchock & Debeluga",
+        location: "Belarus",
+        socialMedia: [
+          {
+            title: "Instagram",
+            href: "https://www.instagram.com/rinalapa"
+          }
+        ]
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
